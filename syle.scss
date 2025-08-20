@@ -1,0 +1,43 @@
+*{
+    background: black;
+}
+.body{
+    padding: 0;
+    margin: 0;
+}
+.header{
+        background: url(/fotos/Nav.png)no-repeat right ;
+}
+.nav{
+
+    &-burger{
+        &-line{
+
+        }
+    }
+    &-tp{
+        &-words{
+
+        }
+    }
+    &time{
+        &-text{
+
+        }
+        &-numbers{
+
+        }
+        &-letters{
+
+        }
+    }
+    &-title{
+
+    }
+    &p{
+
+    }
+    &-button{
+
+    }
+}
