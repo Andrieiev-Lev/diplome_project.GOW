@@ -1,12 +1,64 @@
-* {
-  background: black;
-}
-
-.body {
+body {
   padding: 0;
   margin: 0;
+  background: #1C2023;
+  height: 100vh;
+  color: white;
 }
 
 .header {
-  background: url(/fotos/Nav.png) no-repeat right;
+  background: url(/fotos/Nav.png) no-repeat right/70vw 700px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+}
+.nav-group {
+  display: flex;
+  align-items: center;
+}
+.nav-burger {
+  display: flex;
+  flex-direction: column;
+  row-gap: 4px;
+}
+.nav-burger-line {
+  background: white;
+  width: 25px;
+  height: 3px;
+}
+.nav-tp-words {
+  text-decoration: none;
+  color: rgb(230, 200, 200);
+}
+.nav-time {
+  display: flex;
+  align-items: center;
+}
+.nav-time-div-numbers {
+  margin: 0;
+  font-size: 20px;
+}
+.nav-time-div-letters {
+  margin: 0;
+  font-size: 12px;
+  letter-spacing: 18px;
+}
+.nav-box {
+  margin-left: 260px;
+  width: 400px;
+  height: auto;
+}
+.nav-box-title {
+  font-size: 60px;
+}
+.nav-box-button {
+  width: 90px;
+  height: 30px;
+  background: #8856D9;
+  color: white;
+  font-size: 11px;
+  border-radius: 13%;
+  margin-top: 20px;
 }
