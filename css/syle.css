@@ -6,6 +6,51 @@ body {
   color: white;
 }
 
+.days {
+  position: relative;
+  z-index: 1;
+  color: #A9C7C7;
+  font-size: 35px;
+}
+
+.days::after {
+  position: absolute;
+  content: "D";
+  top: 40px;
+  left: 14px;
+  font-size: 10px;
+}
+
+.hours {
+  position: relative;
+  z-index: 1;
+  color: #A9C7C7;
+  font-size: 35px;
+}
+
+.hours:after {
+  position: absolute;
+  content: "H";
+  top: 40px;
+  left: 14px;
+  font-size: 10px;
+}
+
+.minutes {
+  position: relative;
+  z-index: 1;
+  color: #A9C7C7;
+  font-size: 35px;
+}
+
+.minutes:after {
+  position: absolute;
+  content: "M";
+  top: 40px;
+  left: 14px;
+  font-size: 10px;
+}
+
 .header {
   background: url(/fotos/Nav.png) no-repeat right/70vw 700px;
 }
@@ -17,6 +62,7 @@ body {
 .nav-group {
   display: flex;
   align-items: center;
+  margin-left: 1%;
 }
 .nav-burger {
   display: flex;
@@ -29,6 +75,11 @@ body {
   height: 3px;
   margin-left: -15px;
 }
+.nav-tp {
+  display: flex;
+  -moz-column-gap: 16px;
+       column-gap: 16px;
+}
 .nav-tp-words {
   text-decoration: none;
   color: rgb(230, 200, 200);
@@ -37,6 +88,11 @@ body {
 .nav-time {
   display: flex;
   align-items: center;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+.nav-time-text {
+  color: #8C96A0;
 }
 .nav-time-div-numbers {
   margin: 0;
