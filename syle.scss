@@ -121,8 +121,9 @@ color: #8C96A0;
     }
 }
 .editions{
+    margin-left: -9%;
     &-title{
-       margin-left: 48%;
+       margin-left: 49%;
        font-size: 50px;
     }
     &-cards{
@@ -165,5 +166,42 @@ background: linear-gradient(178deg, rgba(20, 22, 21, 1) 0%, rgba(28, 32, 35, 1) 
         margin-left: 227px;
             }
         }
+    }
+}
+.title{
+     margin-left: 43%;
+       font-size: 50px;
+}
+.DualSense{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    &-left{
+        width: 340px;
+
+        &-text{
+            color: #A9C7C7;
+            &-a{
+               color: rgb(125, 99, 176);
+               text-decoration: none;
+            }
+        }
+        &-textt{
+            color: #A9C7C7;
+        }
+        &-h1{
+            font-size: 20px;
+        }
+        &-button{
+            background: red;
+            width: 220px;
+            height: 40px;
+            color: white;
+            border-radius: 6px;
+        }
+    }
+    &-img{
+
     }
 }

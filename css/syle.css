@@ -121,8 +121,11 @@ body {
   margin-top: 20px;
 }
 
+.editions {
+  margin-left: -9%;
+}
 .editions-title {
-  margin-left: 48%;
+  margin-left: 49%;
   font-size: 50px;
 }
 .editions-cards {
@@ -161,4 +164,38 @@ body {
   border-radius: 13%;
   margin-top: -20px;
   margin-left: 227px;
+}
+
+.title {
+  margin-left: 43%;
+  font-size: 50px;
+}
+
+.DualSense {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.DualSense-left {
+  width: 340px;
+}
+.DualSense-left-text {
+  color: #A9C7C7;
+}
+.DualSense-left-text-a {
+  color: rgb(125, 99, 176);
+  text-decoration: none;
+}
+.DualSense-left-textt {
+  color: #A9C7C7;
+}
+.DualSense-left-h1 {
+  font-size: 20px;
+}
+.DualSense-left-button {
+  background: red;
+  width: 220px;
+  height: 40px;
+  color: white;
+  border-radius: 6px;
 }
