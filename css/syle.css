@@ -6,6 +6,10 @@ body {
   color: white;
 }
 
+li {
+  list-style: none;
+}
+
 .days {
   position: relative;
   z-index: 1;
@@ -119,6 +123,7 @@ body {
   font-size: 11px;
   border-radius: 15%;
   margin-top: 20px;
+  cursor: pointer;
 }
 
 .editions {
@@ -164,6 +169,7 @@ body {
   border-radius: 13%;
   margin-top: -20px;
   margin-left: 227px;
+  cursor: pointer;
 }
 
 .title {
@@ -179,6 +185,23 @@ body {
 .DualSense-left {
   width: 340px;
 }
+.DualSense-left-div {
+  display: flex;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  align-items: center;
+}
+.DualSense-left-div-h1 {
+  font-size: 20px;
+}
+.DualSense-left-button {
+  background: red;
+  width: 220px;
+  height: 40px;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
 .DualSense-left-text {
   color: #A9C7C7;
 }
@@ -189,13 +212,107 @@ body {
 .DualSense-left-textt {
   color: #A9C7C7;
 }
-.DualSense-left-h1 {
+.TrTitle {
+  text-align: center;
+  font-size: 50px;
+}
+
+.trailer {
+  background: url(/fotos/image\ 6.png) no-repeat center/cover;
+  padding-top: 457px;
+  padding-bottom: 447px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.trailer-title {
+  font-size: 50px;
+}
+.trailer-button {
+  background: #30373F;
+  color: #FFFFFF;
+  padding: 9px 26px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+.explore {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.explore-title {
+  font-size: 50px;
+}
+.explore-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.explore-card-price {
+  font-size: 30px;
+}
+.explore-card-title {
   font-size: 20px;
 }
-.DualSense-left-button {
+.explore-card-circle {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 15px;
+       column-gap: 15px;
+}
+.explore-card-circle-bg {
+  width: 54px;
+  height: 25px;
+  background: #30373F;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+}
+.explore-card-circle-bg-item {
+  width: 18px;
+  height: 17px;
+  background: #8856D9;
+  border-radius: 50%;
+  margin-left: 5px;
+  transition: all 0.4s;
+}
+.explore-card-cont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.explore-card-cont-right-ul {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+.explore-card-cont-right-ul-li {
+  color: #8856D9;
+}
+.explore-card-cont-right-ul-button {
   background: red;
-  width: 220px;
-  height: 40px;
+  width: 96px;
+  height: 29px;
   color: white;
   border-radius: 6px;
+  cursor: pointer;
+}
+
+.PC-settings {
+  color: white;
+}
+
+.new-title {
+  text-align: center;
+  font-size: 50px;
+}
+
+.Faq-title {
+  text-align: center;
+  font-size: 50px;
 }
