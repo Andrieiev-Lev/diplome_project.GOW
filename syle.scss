@@ -382,18 +382,20 @@ li {
 }
 
 .news {
-    &-prev{
-background: #8856D9;
-width: 25px;
-height: 25px;
-color: white;
+    &-prev {
+        background: #8856D9;
+        width: 25px;
+        height: 25px;
+        color: white;
     }
-    &-next{
-background: #8856D9;
-width: 25px;
-height: 25px;
-color: white;
+
+    &-next {
+        background: #8856D9;
+        width: 25px;
+        height: 25px;
+        color: white;
     }
+
     &-slide {
         background: #30373F;
         margin-left: 20px;
@@ -403,6 +405,7 @@ color: white;
         &-top {
             display: flex;
             justify-content: space-between;
+
             &-left {
                 color: #8856D9;
             }
@@ -461,4 +464,57 @@ color: white;
 .Faq-title {
     text-align: center;
     font-size: 50px;
+}
+
+.footer {
+    color: #FFFFFF80;
+
+    &-top {
+        display: flex;
+        justify-content: space-around;
+        &-list {
+            display: flex;
+            column-gap: 16px;
+
+            &-words {
+            }
+        }
+
+        &-div {
+            display: flex;
+            column-gap: 5px;
+            &-language {}
+
+            &-english {
+                color: white;
+            }
+        }
+
+    }
+
+    &-bottom {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 10px;
+        &-text {
+            width: 904px;
+            height: 51px;
+            text-align: center;
+        }
+
+        &-img {
+            width: 46px;
+            height: 35px;
+        }
+
+        &-2022 {}
+
+        &-p {
+            &-a {
+                color: #8856D9;
+                text-decoration: none
+            }
+        }
+    }
 }
