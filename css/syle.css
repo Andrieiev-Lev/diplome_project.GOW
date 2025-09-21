@@ -393,17 +393,69 @@ li {
   font-size: 50px;
 }
 
+.faq {
+  padding: 0px 450px 50px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+.faq-card-line {
+  background: #8856D9;
+  height: 2px;
+  border: none;
+}
+.faq-card-question {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.faq-card-question-right {
+  background: #8C96A0;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  color: white;
+  width: 20px;
+  height: 20px;
+}
+.faq-card-answer {
+  position: absolute;
+  transform: translateY(5px);
+  transition: al 0.4s;
+  opacity: 0;
+  z-index: 1;
+}
+
+.show-answer {
+  position: relative;
+  transform: translateY(opx);
+  opacity: 1;
+  z-index: 1;
+}
+
+.cross {
+  rotate: 45deg;
+}
+
+.orange {
+  color: #FF4136;
+}
+
 .footer {
   color: rgba(255, 255, 255, 0.5019607843);
 }
 .footer-top {
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 .footer-top-list {
   display: flex;
   -moz-column-gap: 16px;
        column-gap: 16px;
+}
+.footer-top-list-words {
+  font-size: 21px;
 }
 .footer-top-div {
   display: flex;
