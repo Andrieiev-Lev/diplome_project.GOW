@@ -6,6 +6,99 @@ body {
     color: white;
 }
 
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.505);
+
+    &-modal {
+        width: 560px;
+        background: #30373F;
+        position: relative;
+        padding: 32px 32px 16px;
+        border-radius: 12px;
+
+        &-cross {
+            position: absolute;
+            right: 20px;
+            top: 20px;
+        }
+
+        &-title {
+            text-align: center;
+        }
+
+        &-subtitle {
+            text-align: center;
+        }
+
+        &-form {
+            display: flex;
+            flex-direction: column;
+
+            &-box {
+                &:nth-child(2) {
+                    flex-direction: row;
+                    justify-content: space-between;
+                }
+
+                display: flex;
+                flex-direction: column;
+
+                &-label {}
+
+                &-input {}
+
+                &-expire {
+                    display: flex;
+                    flex-direction: column;
+
+                    &-label {}
+
+                    &-input {}
+                }
+
+                &-cvv {
+                    display: flex;
+                    flex-direction: column;
+
+                    &-label {}
+
+                    &-input {}
+                }
+            }
+
+            &-rules {
+                display: flex;
+                align-items: center;
+                row-gap: 12px;
+
+                &-check {}
+
+                &-text {}
+            }
+
+            &-p {}
+
+            &-price {
+                display: flex;
+                justify-content: space-between;
+                &-desc {}
+
+                &-item {}
+            }
+
+            &-buy {}
+        }
+    }
+}
+
 h3 {
     margin: 0;
 }
@@ -65,8 +158,8 @@ li {
 
 .header {
     background: url(/fotos/Nav.png)no-repeat right/70vw 700px;
-
 }
+
 .nav {
     &-group {
         display: flex;
@@ -505,15 +598,18 @@ li {
         }
     }
 }
-.show-answer{
-                position: relative;
-            transform: translateY(opx);
-            opacity: 1;
-            z-index: 1;
+
+.show-answer {
+    position: relative;
+    transform: translateY(opx);
+    opacity: 1;
+    z-index: 1;
 }
-.cross{
+
+.cross {
     rotate: 45deg;
 }
+
 .orange {
     color: #FF4136;
 }

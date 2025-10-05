@@ -6,6 +6,64 @@ body {
   color: white;
 }
 
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.505);
+}
+.overlay-modal {
+  width: 560px;
+  background: #30373F;
+  position: relative;
+  padding: 32px 32px 16px;
+  border-radius: 12px;
+}
+.overlay-modal-cross {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+.overlay-modal-title {
+  text-align: center;
+}
+.overlay-modal-subtitle {
+  text-align: center;
+}
+.overlay-modal-form {
+  display: flex;
+  flex-direction: column;
+}
+.overlay-modal-form-box {
+  display: flex;
+  flex-direction: column;
+}
+.overlay-modal-form-box:nth-child(2) {
+  flex-direction: row;
+  justify-content: space-between;
+}
+.overlay-modal-form-box-expire {
+  display: flex;
+  flex-direction: column;
+}
+.overlay-modal-form-box-cvv {
+  display: flex;
+  flex-direction: column;
+}
+.overlay-modal-form-rules {
+  display: flex;
+  align-items: center;
+  row-gap: 12px;
+}
+.overlay-modal-form-price {
+  display: flex;
+  justify-content: space-between;
+}
 h3 {
   margin: 0;
 }
