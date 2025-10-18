@@ -6,6 +6,11 @@ body {
   color: white;
 }
 
+.video {
+  width: 100%;
+  display: none;
+}
+
 .overlay {
   position: fixed;
   top: 0;
@@ -13,13 +18,14 @@ body {
   right: 0;
   bottom: 0;
   display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   background: rgba(0, 0, 0, 0.505);
 }
 .overlay-modal {
-  width: 560px;
-  background: #30373F;
+  width: 436px;
+  background: url(/fotos/image\ 4.png) no-repeat center/cover, #24272a;
   position: relative;
   padding: 32px 32px 16px;
   border-radius: 12px;
@@ -28,12 +34,17 @@ body {
   position: absolute;
   right: 20px;
   top: 20px;
+  cursor: pointer;
+  font-size: 20px;
 }
 .overlay-modal-title {
   text-align: center;
+  color: #8856D9;
+  margin: 0;
 }
 .overlay-modal-subtitle {
   text-align: center;
+  margin: 1%;
 }
 .overlay-modal-form {
   display: flex;
@@ -47,82 +58,109 @@ body {
   flex-direction: row;
   justify-content: space-between;
 }
+.overlay-modal-form-box-label {
+  font-size: 11px;
+  padding: 0px 0px 8px 0px;
+}
+.overlay-modal-form-box-input {
+  background: #30373F;
+  width: 410px;
+  border: none;
+  height: 44px;
+  border-radius: 6px;
+  padding: 0 12px;
+  letter-spacing: 1px;
+  color: white;
+}
+.overlay-modal-form-box-input::-moz-placeholder {
+  color: white;
+}
+.overlay-modal-form-box-input::placeholder {
+  color: white;
+}
 .overlay-modal-form-box-expire {
   display: flex;
   flex-direction: column;
+  padding: 20px 0px 20px 0px;
+}
+.overlay-modal-form-box-expire-label {
+  font-size: 11px;
+  padding: 0px 0px 8px 0px;
+}
+.overlay-modal-form-box-expire-input {
+  background: #30373F;
+  width: 180px;
+  border: none;
+  height: 44px;
+  border-radius: 6px;
+  padding: 0 12px;
+  letter-spacing: 1px;
+  color: white;
+}
+.overlay-modal-form-box-expire-input::-moz-placeholder {
+  color: white;
+}
+.overlay-modal-form-box-expire-input::placeholder {
+  color: white;
 }
 .overlay-modal-form-box-cvv {
   display: flex;
   flex-direction: column;
+  padding: 20px 0px 20px 0px;
+}
+.overlay-modal-form-box-cvv-label {
+  font-size: 11px;
+  padding: 0px 0px 8px 0px;
+}
+.overlay-modal-form-box-cvv-input {
+  background: #30373F;
+  width: 180px;
+  border: none;
+  height: 44px;
+  border-radius: 6px;
+  padding: 0 12px;
+  letter-spacing: 1px;
+  color: white;
+}
+.overlay-modal-form-box-cvv-input::-moz-placeholder {
+  color: white;
+}
+.overlay-modal-form-box-cvv-input::placeholder {
+  color: white;
 }
 .overlay-modal-form-rules {
   display: flex;
   align-items: center;
   row-gap: 12px;
+  padding: 10px 0px 5px 0px;
+}
+.overlay-modal-form-rules-check {
+  width: 25px;
+  height: 24px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.overlay-modal-form-rules-text {
+  text-transform: capitalize;
+}
+.overlay-modal-form-p {
+  margin: 0%;
 }
 .overlay-modal-form-price {
   display: flex;
   justify-content: space-between;
 }
-h3 {
-  margin: 0;
+.overlay-modal-form-price-item {
+  font-size: 23px;
 }
-
-p {
-  margin: 0;
-}
-
-li {
-  list-style: none;
-}
-
-.days {
-  position: relative;
-  z-index: 1;
-  color: #A9C7C7;
-  font-size: 35px;
-}
-
-.days::after {
-  position: absolute;
-  content: "D";
-  top: 40px;
-  left: 14px;
-  font-size: 10px;
-}
-
-.hours {
-  position: relative;
-  z-index: 1;
-  color: #A9C7C7;
-  font-size: 35px;
-}
-
-.hours:after {
-  position: absolute;
-  content: "H";
-  top: 40px;
-  left: 14px;
-  font-size: 10px;
-}
-
-.minutes {
-  position: relative;
-  z-index: 1;
-  color: #A9C7C7;
-  font-size: 35px;
-}
-
-.minutes:after {
-  position: absolute;
-  content: "M";
-  top: 40px;
-  left: 14px;
-  font-size: 10px;
-}
-
-.header {
-  background: url(/fotos/Nav.png) no-repeat right/70vw 700px;
+.overlay-modal-form-buy {
+  width: 436px;
+  height: 39px;
+  background: #8856D9;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
 }
 
 .nav {
@@ -367,6 +405,7 @@ li {
   color: white;
   border-radius: 6px;
   cursor: pointer;
+  border: none;
 }
 
 .PC-settings {
@@ -497,6 +536,7 @@ li {
 
 .orange {
   color: #FF4136;
+  cursor: pointer;
 }
 
 .footer {

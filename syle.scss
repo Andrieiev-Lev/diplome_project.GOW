@@ -5,6 +5,10 @@ body {
     height: 100vh;
     color: white;
 }
+.video{
+    width: 100%;
+    display: none;
+}
 
 .overlay {
     position: fixed;
@@ -13,13 +17,15 @@ body {
     right: 0;
     bottom: 0;
     display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     background: rgba(0, 0, 0, 0.505);
+    
 
     &-modal {
-        width: 560px;
-        background: #30373F;
+        width: 436px;
+        background: url(/fotos/image\ 4.png) no-repeat center/cover, #24272a;
         position: relative;
         padding: 32px 32px 16px;
         border-radius: 12px;
@@ -28,14 +34,19 @@ body {
             position: absolute;
             right: 20px;
             top: 20px;
+            cursor: pointer;
+            font-size: 20px;
         }
 
         &-title {
             text-align: center;
+            color: #8856D9;
+            margin: 0;
         }
 
         &-subtitle {
             text-align: center;
+            margin: 1%;
         }
 
         &-form {
@@ -51,26 +62,76 @@ body {
                 display: flex;
                 flex-direction: column;
 
-                &-label {}
+                &-label {
+                    font-size: 11px;
+                    padding: 0px 0px 8px 0px;
+                }
 
-                &-input {}
+                &-input {
+                    background: #30373F;
+                    width: 410px;
+                    border: none;
+                    height: 44px;
+                    border-radius: 6px;
+                    padding: 0 12px;
+                    letter-spacing: 1px;
+                    color: white;
+
+                    &::placeholder {
+                        color: white;
+                    }
+                }
 
                 &-expire {
                     display: flex;
                     flex-direction: column;
+                    padding: 20px 0px 20px 0px;
 
-                    &-label {}
+                    &-label {
+                        font-size: 11px;
+                        padding: 0px 0px 8px 0px;
+                    }
 
-                    &-input {}
+                    &-input {
+                        background: #30373F;
+                        width: 180px;
+                        border: none;
+                        height: 44px;
+                        border-radius: 6px;
+                        padding: 0 12px;
+                        letter-spacing: 1px;
+                        color: white;
+
+                        &::placeholder {
+                            color: white;
+                        }
+                    }
                 }
 
                 &-cvv {
                     display: flex;
                     flex-direction: column;
+                    padding: 20px 0px 20px 0px;
 
-                    &-label {}
+                    &-label {
+                        font-size: 11px;
+                        padding: 0px 0px 8px 0px;
+                    }
 
-                    &-input {}
+                    &-input {
+                        background: #30373F;
+                        width: 180px;
+                        border: none;
+                        height: 44px;
+                        border-radius: 6px;
+                        padding: 0 12px;
+                        letter-spacing: 1px;
+                        color: white;
+
+                        &::placeholder {
+                            color: white;
+                        }
+                    }
                 }
             }
 
@@ -78,86 +139,46 @@ body {
                 display: flex;
                 align-items: center;
                 row-gap: 12px;
+                padding: 10px 0px 5px 0px;
 
-                &-check {}
+                &-check {
+                    width: 25px;
+                    height: 24px;
+                    border-radius: 6px;
+                    cursor: pointer;
+                }
 
-                &-text {}
+                &-text {
+                    text-transform: capitalize;
+                }
             }
 
-            &-p {}
+            &-p {
+                margin: 0%;
+            }
 
             &-price {
                 display: flex;
                 justify-content: space-between;
+
                 &-desc {}
 
-                &-item {}
+                &-item {
+                    font-size: 23px;
+                }
             }
 
-            &-buy {}
+            &-buy {
+                width: 436px;
+                height: 39px;
+                background: #8856D9;
+                color: white;
+                border: none;
+                border-radius: 6px;
+                cursor: pointer;
+            }
         }
     }
-}
-
-h3 {
-    margin: 0;
-}
-
-p {
-    margin: 0;
-}
-
-li {
-    list-style: none;
-}
-
-.days {
-    position: relative;
-    z-index: 1;
-    color: #A9C7C7;
-    font-size: 35px;
-}
-
-.days::after {
-    position: absolute;
-    content: 'D';
-    top: 40px;
-    left: 14px;
-    font-size: 10px;
-}
-
-.hours {
-    position: relative;
-    z-index: 1;
-    color: #A9C7C7;
-    font-size: 35px;
-}
-
-.hours:after {
-    position: absolute;
-    content: 'H';
-    top: 40px;
-    left: 14px;
-    font-size: 10px;
-}
-
-.minutes {
-    position: relative;
-    z-index: 1;
-    color: #A9C7C7;
-    font-size: 35px;
-}
-
-.minutes:after {
-    position: absolute;
-    content: 'M';
-    top: 40px;
-    left: 14px;
-    font-size: 10px;
-}
-
-.header {
-    background: url(/fotos/Nav.png)no-repeat right/70vw 700px;
 }
 
 .nav {
@@ -242,6 +263,7 @@ li {
         }
     }
 }
+
 
 .editions {
     margin-left: -4%;
@@ -457,6 +479,7 @@ li {
                         color: white;
                         border-radius: 6px;
                         cursor: pointer;
+                        border: none;
                     }
                 }
             }
@@ -612,6 +635,7 @@ li {
 
 .orange {
     color: #FF4136;
+    cursor: pointer;
 }
 
 .footer {
