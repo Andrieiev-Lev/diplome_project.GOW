@@ -385,6 +385,9 @@ body {
   margin-left: 5px;
   transition: all 0.4s;
 }
+.explore-card-circle-bg-item.active {
+  margin-left: 30px;
+}
 .explore-card-cont {
   display: flex;
   align-items: center;
@@ -409,6 +412,10 @@ body {
 }
 
 .PC-settings {
+  color: white;
+}
+
+.PS-settings {
   color: white;
 }
 
