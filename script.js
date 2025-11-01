@@ -104,10 +104,15 @@ switcher.forEach(function (element, index) {
       } 
     }
     for (let index = 0; index < current.children[0].children.length; index++) {
-      console.log(current.children[0].children[index].children[0])
+      console.log(current.children[0].children[index].children[0].textContent=PsLimited[index])
     }
  
   })
 })
   })
+})
+const navBurger = document.querySelector('.nav-burger')
+const navTp = document.querySelector('.nav-tp')
+navBurger.addEventListener('click',function(){
+  navTp.classList.toggle('active')
 })

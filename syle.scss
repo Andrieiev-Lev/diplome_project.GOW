@@ -6,6 +6,20 @@ body {
     color: white;
 }
 
+.header {
+    background: url(/fotos/Nav.png) no-repeat right/1300px 100%;
+    padding-bottom: 240px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+button {
+    border: none !important;
+    border-radius: 10px !important;
+}
+
 .video {
     width: 100%;
     display: none;
@@ -22,7 +36,6 @@ body {
     justify-content: center;
     align-items: center;
     background: rgba(0, 0, 0, 0.505);
-
 
     &-modal {
         width: 436px;
@@ -183,6 +196,8 @@ body {
 }
 
 .nav {
+    margin-left: 260px;
+    margin-right: 216px;
     &-group {
         display: flex;
         align-items: center;
@@ -190,12 +205,13 @@ body {
     }
 
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 
     &-burger {
         display: flex;
         flex-direction: column;
         row-gap: 4px;
+        cursor: pointer;
 
         &-line {
             background: white;
@@ -208,6 +224,13 @@ body {
     &-tp {
         display: flex;
         column-gap: 16px;
+        transition: all .3s;
+        transform: translate(-200%);
+        opacity: 0;
+        &.active{
+            transform: translate(0%);
+            opacity: 1;
+        }
 
         &-words {
             text-decoration: none;
@@ -267,17 +290,17 @@ body {
 
 
 .editions {
-    margin-left: -4%;
 
     &-title {
-        margin-left: 46%;
         font-size: 50px;
+        text-align: center;
     }
 
     &-cards {
         display: flex;
         column-gap: 50px;
-        margin-left: 20%;
+        display: flex;
+        justify-content: center;
 
         &-div {
             background: #141615;
@@ -324,8 +347,8 @@ body {
 }
 
 .title {
-    margin-left: 43%;
     font-size: 50px;
+    text-align: center;
 }
 
 .DualSense {
@@ -496,6 +519,7 @@ body {
 .PC-settings {
     color: white;
 }
+
 .PS-settings {
     color: white;
 }
@@ -506,10 +530,23 @@ body {
 }
 
 .news {
+    position: relative;
+
+    .swiper-button-prev {
+        margin-left: 200px;
+    }
+
+    .swiper-button-next {
+        margin-right: 200px;
+    }
+
     &-prev {
+        position: absolute;
         background: #8856D9;
         width: 25px;
         height: 25px;
+        padding: 6px;
+        border-radius: 6px;
         color: white;
     }
 
@@ -517,6 +554,8 @@ body {
         background: #8856D9;
         width: 25px;
         height: 25px;
+        padding: 6px;
+        border-radius: 6px;
         color: white;
     }
 
@@ -565,9 +604,7 @@ body {
                     cursor: pointer;
                 }
 
-                &-text {
-                    min-width: 256px;
-                }
+                &-text {}
             }
 
             &-wrapper {
@@ -624,79 +661,79 @@ body {
         &-answer {
             position: absolute;
             transform: translateY(5px);
-            transition: al .4s;
-            opacity: 0;
-            z-index: 1;
-        }
-    }
-}
-
-.show-answer {
-    position: relative;
-    transform: translateY(opx);
-    opacity: 1;
-    z-index: 1;
-}
-
-.cross {
-    rotate: 45deg;
-}
-
-.orange {
-    color: #FF4136;
-    cursor: pointer;
-}
-
-.footer {
-    color: #FFFFFF80;
-
-    &-top {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-
-        &-list {
-            display: flex;
-            column-gap: 16px;
-
-            &-words {
-                font-size: 21px;
-            }
-        }
-
-        &-div {
-            display: flex;
-            column-gap: 5px;
-
-            &-language {}
-
-            &-english {
-                color: white;
-            }
-        }
-
-    }
-
-    &-bottom {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        row-gap: 10px;
-
-        &-text {
-            width: 904px;
-            height: 51px;
-            text-align: center;
-        }
-
-        &-img {
-            width: 46px;
-            height: 35px;
-        }
-
-        &-2022 {}
-
-        &-p {
+            transition: al .4s;                                                                                                                                                                                                    
+            opacity: 0;                                                                                                                                                                                                    
+            z-index: 1;                                                                                                                                                                                                    
+        }                                                                                                                                                                                                    
+    }                                                                                                                                                                                                    
+}                                                                                                                                                                                                    
+                                                                                
+.show-answer {                                                                                                                                                                                                    
+    position: relative;                                                                                                                                                                                                    
+    transform: translateY(opx);                                                                                                                                                                                                    
+    opacity: 1;                                                                                                                                                                                                    
+    z-index: 1;                                                                                                                                                                                                    
+}                                                                                                                                                                                                    
+                                                                                
+.cross {                                                                                                                                                                                                    
+    rotate: 45deg;                                                                                                                                                                                                    
+}                                                                                                                                                                                                    
+                                                                                
+.orange {                                                                                                                                                                                                    
+    color: #FF4136;                                                                                                                                                                                                    
+    cursor: pointer;                                                                                                                                                                                                    
+}                                                                                                                                                                                                    
+                                                                                
+.footer {                                                                                                                                                                                                    
+    color: #FFFFFF80;                                                                                                                                                                                                    
+                                                                                
+    &-top {                                                                                                                                                                                                    
+        display: flex;                                                                                                                                                                                                    
+        justify-content: space-around;                                                                                                                                                                                                    
+        align-items: center;                                                                                                                                                                                                    
+                                                                                
+        &-list {                                                                                                                                                                                                    
+            display: flex;                                                                                                                                                                                                    
+            column-gap: 16px;                                                                                                                                                                                                    
+                                                                                
+            &-words {                                                                                                                                                                                                    
+                font-size: 21px;                                                                                                                                                                                                    
+            }                                                                                                                                                                                                    
+        }                                                                                                                                                                                                    
+                                                                                
+        &-div {                                                                                                                                                                                                    
+            display: flex;                                                                                                                                                                                                    
+            column-gap: 5px;                                                                                                                                                                                                    
+                                                                                
+            &-language {}                                                                                                                                                                                                    
+                                                                                
+            &-english {                                                                                                                                                                                                    
+                color: white;                                                                                                                                                                                                    
+            }                                                                                                                                                                                                    
+        }                                                                                                                                                                                                    
+                                                                                
+    }                                                                                                                                                                                                    
+                                                                                
+    &-bottom {                                                                                                                                                                                                    
+        display: flex;                                                                                                                                                                                                    
+        flex-direction: column;                                                                                                                                                                                                    
+        align-items: center;                                                                                                                                                                                                    
+        row-gap: 10px;                                                                                                                                                                                                    
+                                                                                
+        &-text {                                                                                                                                                                                                    
+            width: 904px;                                                                                                                                                                                                    
+            height: 51px;                                                                                                                                                                                                    
+            text-align: center;                                                                                                                                                                                                    
+        }                                                                                                                                                                                                    
+                                                                                
+        &-img {                                                                                                                                                                                                    
+            width: 46px;                                                                                                                                                                                                    
+            height: 35px;                                                                                                                                                                                                    
+        }                                                                                                                                                                                                    
+                                                                                
+        &-2022 {}                                                                                                                                                                                                    
+                                                                                
+        &-p {                                                                                                                                                                                                    
             &-a {
                 color: #8856D9;
                 text-decoration: none

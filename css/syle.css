@@ -6,6 +6,20 @@ body {
   color: white;
 }
 
+.header {
+  background: url(/fotos/Nav.png) no-repeat right/1300px 100%;
+  padding-bottom: 240px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+button {
+  border: none !important;
+  border-radius: 10px !important;
+}
+
 .video {
   width: 100%;
   display: none;
@@ -164,8 +178,10 @@ body {
 }
 
 .nav {
+  margin-left: 260px;
+  margin-right: 216px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .nav-group {
   display: flex;
@@ -176,6 +192,7 @@ body {
   display: flex;
   flex-direction: column;
   row-gap: 4px;
+  cursor: pointer;
 }
 .nav-burger-line {
   background: white;
@@ -187,6 +204,13 @@ body {
   display: flex;
   -moz-column-gap: 16px;
        column-gap: 16px;
+  transition: all 0.3s;
+  transform: translate(-200%);
+  opacity: 0;
+}
+.nav-tp.active {
+  transform: translate(0%);
+  opacity: 1;
 }
 .nav-tp-words {
   text-decoration: none;
@@ -230,18 +254,16 @@ body {
   cursor: pointer;
 }
 
-.editions {
-  margin-left: -4%;
-}
 .editions-title {
-  margin-left: 46%;
   font-size: 50px;
+  text-align: center;
 }
 .editions-cards {
   display: flex;
   -moz-column-gap: 50px;
        column-gap: 50px;
-  margin-left: 20%;
+  display: flex;
+  justify-content: center;
 }
 .editions-cards-div {
   background: #141615;
@@ -277,8 +299,8 @@ body {
 }
 
 .title {
-  margin-left: 43%;
   font-size: 50px;
+  text-align: center;
 }
 
 .DualSense {
@@ -424,16 +446,30 @@ body {
   font-size: 50px;
 }
 
+.news {
+  position: relative;
+}
+.news .swiper-button-prev {
+  margin-left: 200px;
+}
+.news .swiper-button-next {
+  margin-right: 200px;
+}
 .news-prev {
+  position: absolute;
   background: #8856D9;
   width: 25px;
   height: 25px;
+  padding: 6px;
+  border-radius: 6px;
   color: white;
 }
 .news-next {
   background: #8856D9;
   width: 25px;
   height: 25px;
+  padding: 6px;
+  border-radius: 6px;
   color: white;
 }
 .news-slide {
@@ -476,9 +512,6 @@ body {
   align-self: flex-end;
   border: none;
   cursor: pointer;
-}
-.news-slide-main-right-text {
-  min-width: 256px;
 }
 .news-slide-main-wrapper {
   display: flex;
